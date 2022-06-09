@@ -5,8 +5,8 @@ import Form from './components/Form/Form';
 import useStyles from './styles';
 import { useDispatch } from 'react-redux';
 import { getPosts } from './actions/posts';
-
 import memories from './images/memories.png'
+
 const App = () => {
     const [currentId, setCurrentId] = useState(null);
     const classes = useStyles();
@@ -31,7 +31,6 @@ const App = () => {
                         <Grid item xs={12} sm={4}>
                             <Form currentId={currentId} setCurrentId={setCurrentId} />
                         </Grid>
-
                     </Grid> 
                 </Container>
             </Grow>
